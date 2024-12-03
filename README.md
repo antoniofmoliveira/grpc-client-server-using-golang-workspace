@@ -31,14 +31,14 @@ protoc --go_out=. --go-grpc_out=. chat.proto
 
 ## Create gRPC server
 
-  create `server/chatimpl/chat.go` file
-    implement `chat.Server` interface
-      dont forget to embed `chat.UnimplementedChatServiceServer`
-    implement `chat.ChatServiceServer` interface
-  create server.go file
-    implement `main` function
+- create `server/chatimpl/chat.go` file
+  - implement `chat.Server` interface
+    - dont forget to embed `chat.UnimplementedChatServiceServer`
+  - implement `chat.ChatServiceServer` interface
+- create server.go file
+  - implement `main` function
 
 ## Create gRPC client
 
-  create `client/client.go` file
-    implement `main` function
+- create `client/client.go` file
+  - implement `main` function
